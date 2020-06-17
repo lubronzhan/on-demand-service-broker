@@ -316,7 +316,7 @@ var _ = Describe("Broker Services", func() {
 		It("returns the list of instances when called", func() {
 			host := "test.test"
 			brokerServices = services.NewBrokerServices(client, authHeaderBuilder, "http://"+host, logger)
-			client.DoReturns(response(http.StatusOK, `[{"service_instance_id": "foo", "plan_id": "plan"}, {"service_instance_id": "bar", "plan_id": "another-plan"}]`), nil)
+			client.DoReturns(response(http.StatusOK, `[{"service_instance_id": "foo", "plan_id": "plan", "space_guid": "space_id"}, {"service_instance_id": "bar", "plan_id": "another-plan", "space_guid": "space_id"}]`), nil)
 
 			instances, err := brokerServices.Instances(nil)
 			Expect(err).NotTo(HaveOccurred())
@@ -336,10 +336,12 @@ var _ = Describe("Broker Services", func() {
 				service.Instance{
 					GUID:         "foo",
 					PlanUniqueID: "plan",
+					SpaceGUID:    "space_id",
 				},
 				service.Instance{
 					GUID:         "bar",
 					PlanUniqueID: "another-plan",
+					SpaceGUID:    "space_id",
 				},
 			}))
 		})
