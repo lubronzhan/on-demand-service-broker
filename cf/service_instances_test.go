@@ -61,6 +61,7 @@ var _ = Describe("ServiceInstancesClient", func() {
 							"guid": "fake-service-instance-guid"
 						},
 						"entity": {
+							"space_guid": "space-id",
 							"service_plan_url": "fake-url",
 							"maintenance_info": {
 								"version": "1.2.3"
@@ -84,6 +85,7 @@ var _ = Describe("ServiceInstancesClient", func() {
 					GUID: "fake-service-instance-guid",
 				},
 				Entity: cf.ServiceInstanceEntity{
+					SpaceGUID: "space-id",
 					ServicePlanURL: "fake-url",
 					MaintenanceInfo: cf.MaintenanceInfo{
 						Version: "1.2.3",

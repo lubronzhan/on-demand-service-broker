@@ -52,15 +52,18 @@ var _ = Describe("Broker Services", func() {
 
 	Describe("ProcessInstance", func() {
 		It("returns an bosh operation", func() {
+			spaceID := "space-id"
 			brokerServices = services.NewBrokerServices(client, authHeaderBuilder, "http://test.test", logger)
 			planUniqueID := "unique_plan_id"
-			expectedBody := fmt.Sprintf(`{"plan_id": "%s"}`, planUniqueID)
+			expectedBody := fmt.Sprintf(`{"plan_id": "%s", "context":{"space_guid":"%s"}}`, planUniqueID, spaceID)
 			client.DoReturns(response(http.StatusNotFound, ""), nil)
 
-			upgradeOperation, err := brokerServices.ProcessInstance(service.Instance{
-				GUID:         serviceInstanceGUID,
-				PlanUniqueID: planUniqueID,
-			}, operationType)
+			upgradeOperation, err := brokerServices.ProcessInstance(
+				service.Instance{
+					GUID:         serviceInstanceGUID,
+					PlanUniqueID: planUniqueID,
+					SpaceGUID:    spaceID,
+				}, operationType)
 
 			Expect(err).NotTo(HaveOccurred())
 			request := client.DoArgsForCall(0)
