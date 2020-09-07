@@ -5,7 +5,7 @@ import (
 	"log"
 	"sync"
 
-	"github.com/pivotal-cf/on-demand-service-broker/registrar"
+	"github.com/lubronzhan/on-demand-service-broker/registrar"
 )
 
 type FakeCloudFoundryClient struct {

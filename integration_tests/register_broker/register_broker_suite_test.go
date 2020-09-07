@@ -17,7 +17,7 @@ var binaryPath string
 
 var _ = BeforeSuite(func() {
 	var err error
-	binaryPath, err = gexec.Build("github.com/pivotal-cf/on-demand-service-broker/cmd/register-broker")
+	binaryPath, err = gexec.Build("github.com/lubronzhan/on-demand-service-broker/cmd/register-broker")
 	Expect(err).NotTo(HaveOccurred())
 })
 

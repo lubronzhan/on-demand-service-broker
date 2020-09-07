@@ -5,8 +5,8 @@ import (
 	"log"
 	"sync"
 
-	"github.com/pivotal-cf/on-demand-service-broker/boshdirector"
-	"github.com/pivotal-cf/on-demand-service-broker/task"
+	"github.com/lubronzhan/on-demand-service-broker/boshdirector"
+	"github.com/lubronzhan/on-demand-service-broker/task"
 )
 
 type FakeBoshClient struct {

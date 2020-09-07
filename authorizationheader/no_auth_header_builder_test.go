@@ -9,9 +9,9 @@ package authorizationheader_test
 import (
 	"net/http"
 
+	"github.com/lubronzhan/on-demand-service-broker/authorizationheader"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"github.com/pivotal-cf/on-demand-service-broker/authorizationheader"
 )
 
 var _ = Describe("Basic No Header Builder", func() {

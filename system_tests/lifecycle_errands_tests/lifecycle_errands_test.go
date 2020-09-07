@@ -10,17 +10,17 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/pivotal-cf/on-demand-service-broker/system_tests/test_helpers/bosh_helpers"
+	"github.com/lubronzhan/on-demand-service-broker/system_tests/test_helpers/bosh_helpers"
 
 	"regexp"
 
+	"github.com/lubronzhan/on-demand-service-broker/boshdirector"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"github.com/onsi/gomega/gexec"
 	"github.com/pborman/uuid"
-	"github.com/pivotal-cf/on-demand-service-broker/boshdirector"
 
-	cf "github.com/pivotal-cf/on-demand-service-broker/system_tests/test_helpers/cf_helpers"
+	cf "github.com/lubronzhan/on-demand-service-broker/system_tests/test_helpers/cf_helpers"
 )
 
 var _ = Describe("lifecycle errand tests", func() {

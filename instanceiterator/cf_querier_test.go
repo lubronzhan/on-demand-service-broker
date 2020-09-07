@@ -18,9 +18,9 @@ package instanceiterator_test
 import (
 	"log"
 
-	"github.com/pivotal-cf/on-demand-service-broker/instanceiterator"
-	"github.com/pivotal-cf/on-demand-service-broker/instanceiterator/fakes"
-	"github.com/pivotal-cf/on-demand-service-broker/loggerfactory"
+	"github.com/lubronzhan/on-demand-service-broker/instanceiterator"
+	"github.com/lubronzhan/on-demand-service-broker/instanceiterator/fakes"
+	"github.com/lubronzhan/on-demand-service-broker/loggerfactory"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/ginkgo/extensions/table"

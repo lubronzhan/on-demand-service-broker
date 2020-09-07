@@ -4,7 +4,7 @@ package fakes
 import (
 	"sync"
 
-	"github.com/pivotal-cf/on-demand-service-broker/serviceadapter"
+	"github.com/lubronzhan/on-demand-service-broker/serviceadapter"
 )
 
 type FakeCommandRunner struct {

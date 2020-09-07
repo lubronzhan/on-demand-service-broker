@@ -4,9 +4,9 @@ package fakes
 import (
 	"sync"
 
-	"github.com/pivotal-cf/on-demand-service-broker/broker"
-	"github.com/pivotal-cf/on-demand-service-broker/instanceiterator"
-	"github.com/pivotal-cf/on-demand-service-broker/service"
+	"github.com/lubronzhan/on-demand-service-broker/broker"
+	"github.com/lubronzhan/on-demand-service-broker/instanceiterator"
+	"github.com/lubronzhan/on-demand-service-broker/service"
 )
 
 type FakeTriggerer struct {

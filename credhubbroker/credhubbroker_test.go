@@ -22,14 +22,14 @@ import (
 	"fmt"
 	"io"
 
+	apifakes "github.com/lubronzhan/on-demand-service-broker/apiserver/fakes"
+	"github.com/lubronzhan/on-demand-service-broker/brokercontext"
+	"github.com/lubronzhan/on-demand-service-broker/credhubbroker"
+	credfakes "github.com/lubronzhan/on-demand-service-broker/credhubbroker/fakes"
+	"github.com/lubronzhan/on-demand-service-broker/loggerfactory"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"github.com/pivotal-cf/brokerapi/v7/domain"
-	apifakes "github.com/pivotal-cf/on-demand-service-broker/apiserver/fakes"
-	"github.com/pivotal-cf/on-demand-service-broker/brokercontext"
-	"github.com/pivotal-cf/on-demand-service-broker/credhubbroker"
-	credfakes "github.com/pivotal-cf/on-demand-service-broker/credhubbroker/fakes"
-	"github.com/pivotal-cf/on-demand-service-broker/loggerfactory"
 )
 
 var _ = Describe("CredHub broker", func() {

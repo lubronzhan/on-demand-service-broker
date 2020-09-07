@@ -26,7 +26,7 @@ var (
 )
 
 var _ = SynchronizedBeforeSuite(func() []byte {
-	binaryPath, err := gexec.Build("github.com/pivotal-cf/on-demand-service-broker/cmd/orphan-deployments")
+	binaryPath, err := gexec.Build("github.com/lubronzhan/on-demand-service-broker/cmd/orphan-deployments")
 	Expect(err).NotTo(HaveOccurred())
 
 	return []byte(binaryPath)

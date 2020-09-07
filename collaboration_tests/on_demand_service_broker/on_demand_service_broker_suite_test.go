@@ -21,9 +21,9 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/pivotal-cf/on-demand-service-broker/config"
+	"github.com/lubronzhan/on-demand-service-broker/config"
 
-	"github.com/pivotal-cf/on-demand-service-broker/collaboration_tests/helpers"
+	"github.com/lubronzhan/on-demand-service-broker/collaboration_tests/helpers"
 
 	"os"
 	"testing"
@@ -39,12 +39,12 @@ import (
 	"io/ioutil"
 	"net/http"
 
+	"github.com/lubronzhan/on-demand-service-broker/broker/fakes"
+	credhubfakes "github.com/lubronzhan/on-demand-service-broker/credhubbroker/fakes"
+	manifestsecretsfakes "github.com/lubronzhan/on-demand-service-broker/manifestsecrets/fakes"
+	serviceadapterfakes "github.com/lubronzhan/on-demand-service-broker/serviceadapter/fakes"
+	taskfakes "github.com/lubronzhan/on-demand-service-broker/task/fakes"
 	"github.com/onsi/gomega/gbytes"
-	"github.com/pivotal-cf/on-demand-service-broker/broker/fakes"
-	credhubfakes "github.com/pivotal-cf/on-demand-service-broker/credhubbroker/fakes"
-	manifestsecretsfakes "github.com/pivotal-cf/on-demand-service-broker/manifestsecrets/fakes"
-	serviceadapterfakes "github.com/pivotal-cf/on-demand-service-broker/serviceadapter/fakes"
-	taskfakes "github.com/pivotal-cf/on-demand-service-broker/task/fakes"
 )
 
 func TestOnDemandServiceBroker(t *testing.T) {

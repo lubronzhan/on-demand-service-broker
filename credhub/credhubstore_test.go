@@ -8,14 +8,14 @@ import (
 
 	"code.cloudfoundry.org/credhub-cli/credhub/credentials"
 	"code.cloudfoundry.org/credhub-cli/credhub/credentials/values"
+	"github.com/lubronzhan/on-demand-service-broker/boshdirector"
+	"github.com/lubronzhan/on-demand-service-broker/broker"
+	"github.com/lubronzhan/on-demand-service-broker/credhub"
+	"github.com/lubronzhan/on-demand-service-broker/credhub/fakes"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/ginkgo/extensions/table"
 	. "github.com/onsi/gomega"
 	"github.com/onsi/gomega/gbytes"
-	"github.com/pivotal-cf/on-demand-service-broker/boshdirector"
-	"github.com/pivotal-cf/on-demand-service-broker/broker"
-	"github.com/pivotal-cf/on-demand-service-broker/credhub"
-	"github.com/pivotal-cf/on-demand-service-broker/credhub/fakes"
 )
 
 var _ = Describe("CredStore", func() {

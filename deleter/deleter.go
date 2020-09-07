@@ -12,8 +12,8 @@ import (
 
 	"time"
 
-	"github.com/pivotal-cf/on-demand-service-broker/cf"
-	"github.com/pivotal-cf/on-demand-service-broker/config"
+	"github.com/lubronzhan/on-demand-service-broker/cf"
+	"github.com/lubronzhan/on-demand-service-broker/config"
 )
 
 //go:generate go run github.com/maxbrunsfeld/counterfeiter/v6 -o fakes/fake_cloud_foundry_client.go . CloudFoundryClient

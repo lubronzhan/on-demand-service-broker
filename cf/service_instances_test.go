@@ -8,15 +8,15 @@ import (
 	"net/http"
 	"regexp"
 
-	"github.com/pivotal-cf/on-demand-service-broker/mockhttp"
-	"github.com/pivotal-cf/on-demand-service-broker/mockhttp/mockcfapi"
+	"github.com/lubronzhan/on-demand-service-broker/mockhttp"
+	"github.com/lubronzhan/on-demand-service-broker/mockhttp/mockcfapi"
 
+	"github.com/lubronzhan/on-demand-service-broker/cf"
+	"github.com/lubronzhan/on-demand-service-broker/cf/fakes"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"github.com/onsi/gomega/gbytes"
 	"github.com/onsi/gomega/ghttp"
-	"github.com/pivotal-cf/on-demand-service-broker/cf"
-	"github.com/pivotal-cf/on-demand-service-broker/cf/fakes"
 )
 
 var _ = Describe("ServiceInstancesClient", func() {
@@ -85,7 +85,7 @@ var _ = Describe("ServiceInstancesClient", func() {
 					GUID: "fake-service-instance-guid",
 				},
 				Entity: cf.ServiceInstanceEntity{
-					SpaceGUID: "space-id",
+					SpaceGUID:      "space-id",
 					ServicePlanURL: "fake-url",
 					MaintenanceInfo: cf.MaintenanceInfo{
 						Version: "1.2.3",

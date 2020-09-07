@@ -23,15 +23,15 @@ import (
 
 	"github.com/onsi/gomega/ghttp"
 
-	"github.com/pivotal-cf/on-demand-service-broker/boshdirector"
+	"github.com/lubronzhan/on-demand-service-broker/boshdirector"
 
 	"github.com/onsi/gomega/gbytes"
 	"gopkg.in/yaml.v2"
 
+	brokerConfig "github.com/lubronzhan/on-demand-service-broker/config"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"github.com/onsi/gomega/gexec"
-	brokerConfig "github.com/pivotal-cf/on-demand-service-broker/config"
 )
 
 var _ = Describe("Orphan Deployments", func() {
@@ -40,7 +40,7 @@ var _ = Describe("Orphan Deployments", func() {
 
 	BeforeEach(func() {
 		var err error
-		orphanDeploymentsBinary, err = gexec.Build("github.com/pivotal-cf/on-demand-service-broker/cmd/orphan-deployments")
+		orphanDeploymentsBinary, err = gexec.Build("github.com/lubronzhan/on-demand-service-broker/cmd/orphan-deployments")
 		Expect(err).ToNot(HaveOccurred())
 
 		errandConfigPath = write(brokerConfig.OrphanDeploymentsErrandConfig{

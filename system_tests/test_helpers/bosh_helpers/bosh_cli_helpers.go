@@ -15,12 +15,12 @@ import (
 	"time"
 
 	"github.com/blang/semver"
+	"github.com/lubronzhan/on-demand-service-broker/system_tests/test_helpers/service_helpers"
 	"github.com/onsi/gomega/types"
 	"github.com/pborman/uuid"
-	"github.com/pivotal-cf/on-demand-service-broker/system_tests/test_helpers/service_helpers"
 	"github.com/pivotal-cf/on-demand-services-sdk/bosh"
 
-	"github.com/pivotal-cf/on-demand-service-broker/system_tests/test_helpers/env_helpers"
+	"github.com/lubronzhan/on-demand-service-broker/system_tests/test_helpers/env_helpers"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

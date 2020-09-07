@@ -4,7 +4,7 @@ package fakes
 import (
 	"sync"
 
-	"github.com/pivotal-cf/on-demand-service-broker/broker"
+	"github.com/lubronzhan/on-demand-service-broker/broker"
 )
 
 type FakeStartupChecker struct {

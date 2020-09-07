@@ -19,15 +19,15 @@ import (
 	"errors"
 	"fmt"
 
+	"github.com/lubronzhan/on-demand-service-broker/broker"
+	"github.com/lubronzhan/on-demand-service-broker/broker/services"
+	"github.com/lubronzhan/on-demand-service-broker/instanceiterator"
+	"github.com/lubronzhan/on-demand-service-broker/instanceiterator/fakes"
+	"github.com/lubronzhan/on-demand-service-broker/service"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/ginkgo/extensions/table"
 	. "github.com/onsi/gomega"
 	"github.com/pivotal-cf/brokerapi/v7/domain"
-	"github.com/pivotal-cf/on-demand-service-broker/broker"
-	"github.com/pivotal-cf/on-demand-service-broker/broker/services"
-	"github.com/pivotal-cf/on-demand-service-broker/instanceiterator"
-	"github.com/pivotal-cf/on-demand-service-broker/instanceiterator/fakes"
-	"github.com/pivotal-cf/on-demand-service-broker/service"
 )
 
 var _ = Describe("BOSH Operation Triggerer", func() {

@@ -18,11 +18,11 @@ package secure_manifests_test
 import (
 	"encoding/json"
 
+	"github.com/lubronzhan/on-demand-service-broker/broker"
+	"github.com/lubronzhan/on-demand-service-broker/system_tests/test_helpers/bosh_helpers"
+	"github.com/lubronzhan/on-demand-service-broker/system_tests/test_helpers/cf_helpers"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"github.com/pivotal-cf/on-demand-service-broker/broker"
-	"github.com/pivotal-cf/on-demand-service-broker/system_tests/test_helpers/bosh_helpers"
-	"github.com/pivotal-cf/on-demand-service-broker/system_tests/test_helpers/cf_helpers"
 )
 
 var _ = Describe("Secure Manifests", func() {

@@ -5,7 +5,7 @@ import (
 	"log"
 	"sync"
 
-	"github.com/pivotal-cf/on-demand-service-broker/task"
+	"github.com/lubronzhan/on-demand-service-broker/task"
 	"github.com/pivotal-cf/on-demand-services-sdk/serviceadapter"
 )
 

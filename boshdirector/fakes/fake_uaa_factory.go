@@ -5,7 +5,7 @@ import (
 	"sync"
 
 	"github.com/cloudfoundry/bosh-cli/uaa"
-	"github.com/pivotal-cf/on-demand-service-broker/boshdirector"
+	"github.com/lubronzhan/on-demand-service-broker/boshdirector"
 )
 
 type FakeUAAFactory struct {

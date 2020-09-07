@@ -3,10 +3,10 @@ package boshdirector_test
 import (
 	"errors"
 
+	"github.com/lubronzhan/on-demand-service-broker/boshdirector/fakes"
+	"github.com/lubronzhan/on-demand-service-broker/config"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"github.com/pivotal-cf/on-demand-service-broker/boshdirector/fakes"
-	"github.com/pivotal-cf/on-demand-service-broker/config"
 )
 
 var _ = Describe("LinksApi", func() {

@@ -11,13 +11,13 @@ import (
 	"log"
 	"time"
 
+	"github.com/lubronzhan/on-demand-service-broker/config"
+	"github.com/lubronzhan/on-demand-service-broker/instanceiterator"
+	"github.com/lubronzhan/on-demand-service-broker/loggerfactory"
+	"github.com/lubronzhan/on-demand-service-broker/service"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	. "github.com/onsi/gomega/gbytes"
-	"github.com/pivotal-cf/on-demand-service-broker/config"
-	"github.com/pivotal-cf/on-demand-service-broker/instanceiterator"
-	"github.com/pivotal-cf/on-demand-service-broker/loggerfactory"
-	"github.com/pivotal-cf/on-demand-service-broker/service"
 )
 
 var _ = Describe("Logging Listener", func() {

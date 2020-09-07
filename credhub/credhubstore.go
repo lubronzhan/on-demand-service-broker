@@ -27,8 +27,8 @@ import (
 	"code.cloudfoundry.org/credhub-cli/credhub/credentials"
 	"code.cloudfoundry.org/credhub-cli/credhub/credentials/values"
 	"code.cloudfoundry.org/credhub-cli/credhub/permissions"
-	"github.com/pivotal-cf/on-demand-service-broker/boshdirector"
-	"github.com/pivotal-cf/on-demand-service-broker/broker"
+	"github.com/lubronzhan/on-demand-service-broker/boshdirector"
+	"github.com/lubronzhan/on-demand-service-broker/broker"
 )
 
 type Store struct {

@@ -19,9 +19,9 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	"github.com/pivotal-cf/on-demand-service-broker/boshdirector"
-	"github.com/pivotal-cf/on-demand-service-broker/boshlinks"
-	"github.com/pivotal-cf/on-demand-service-broker/config"
+	"github.com/lubronzhan/on-demand-service-broker/boshdirector"
+	"github.com/lubronzhan/on-demand-service-broker/boshlinks"
+	"github.com/lubronzhan/on-demand-service-broker/config"
 	"github.com/pivotal-cf/on-demand-services-sdk/bosh"
 	"gopkg.in/yaml.v2"
 )

@@ -4,7 +4,7 @@ package fakes_telemetry
 import (
 	"sync"
 
-	"github.com/pivotal-cf/on-demand-service-broker/telemetry"
+	"github.com/lubronzhan/on-demand-service-broker/telemetry"
 )
 
 type FakeTime struct {

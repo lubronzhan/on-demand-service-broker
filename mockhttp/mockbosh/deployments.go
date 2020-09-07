@@ -6,7 +6,7 @@
 
 package mockbosh
 
-import "github.com/pivotal-cf/on-demand-service-broker/mockhttp"
+import "github.com/lubronzhan/on-demand-service-broker/mockhttp"
 
 type deploymentsMock struct {
 	*mockhttp.Handler

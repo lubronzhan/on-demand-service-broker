@@ -9,16 +9,17 @@ package instanceiterator_test
 import (
 	"errors"
 	"fmt"
-	"github.com/pivotal-cf/on-demand-service-broker/instanceiterator"
 	"testing"
 	"time"
 
+	"github.com/lubronzhan/on-demand-service-broker/instanceiterator"
+
+	"github.com/lubronzhan/on-demand-service-broker/broker"
+	"github.com/lubronzhan/on-demand-service-broker/config"
+	"github.com/lubronzhan/on-demand-service-broker/instanceiterator/fakes"
+	"github.com/lubronzhan/on-demand-service-broker/service"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"github.com/pivotal-cf/on-demand-service-broker/broker"
-	"github.com/pivotal-cf/on-demand-service-broker/config"
-	"github.com/pivotal-cf/on-demand-service-broker/instanceiterator/fakes"
-	"github.com/pivotal-cf/on-demand-service-broker/service"
 )
 
 func TestIterator(t *testing.T) {

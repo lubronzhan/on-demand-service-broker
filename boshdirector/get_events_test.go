@@ -2,9 +2,9 @@ package boshdirector_test
 
 import (
 	"github.com/cloudfoundry/bosh-cli/director"
+	"github.com/lubronzhan/on-demand-service-broker/boshdirector"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"github.com/pivotal-cf/on-demand-service-broker/boshdirector"
 	"github.com/pkg/errors"
 )
 

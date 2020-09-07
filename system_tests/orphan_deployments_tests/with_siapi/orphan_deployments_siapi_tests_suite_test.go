@@ -19,14 +19,14 @@ import (
 	"os"
 	"testing"
 
+	"github.com/lubronzhan/on-demand-service-broker/system_tests/test_helpers/service_helpers"
 	"github.com/pborman/uuid"
-	"github.com/pivotal-cf/on-demand-service-broker/system_tests/test_helpers/service_helpers"
 
+	bosh "github.com/lubronzhan/on-demand-service-broker/system_tests/test_helpers/bosh_helpers"
+	cf "github.com/lubronzhan/on-demand-service-broker/system_tests/test_helpers/cf_helpers"
+	"github.com/lubronzhan/on-demand-service-broker/system_tests/test_helpers/siapi_helpers"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	bosh "github.com/pivotal-cf/on-demand-service-broker/system_tests/test_helpers/bosh_helpers"
-	cf "github.com/pivotal-cf/on-demand-service-broker/system_tests/test_helpers/cf_helpers"
-	"github.com/pivotal-cf/on-demand-service-broker/system_tests/test_helpers/siapi_helpers"
 )
 
 var (

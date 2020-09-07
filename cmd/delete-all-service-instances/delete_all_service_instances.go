@@ -12,9 +12,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/pivotal-cf/on-demand-service-broker/cf"
-	"github.com/pivotal-cf/on-demand-service-broker/deleter"
-	"github.com/pivotal-cf/on-demand-service-broker/loggerfactory"
+	"github.com/lubronzhan/on-demand-service-broker/cf"
+	"github.com/lubronzhan/on-demand-service-broker/deleter"
+	"github.com/lubronzhan/on-demand-service-broker/loggerfactory"
 	"gopkg.in/yaml.v2"
 )
 

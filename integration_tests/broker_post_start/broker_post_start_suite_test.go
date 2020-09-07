@@ -22,7 +22,7 @@ func TestBrokerPostStartChecks(t *testing.T) {
 var binaryPath string
 
 var _ = SynchronizedBeforeSuite(func() []byte {
-	binaryPath, err := gexec.Build("github.com/pivotal-cf/on-demand-service-broker/cmd/broker-post-start")
+	binaryPath, err := gexec.Build("github.com/lubronzhan/on-demand-service-broker/cmd/broker-post-start")
 	Expect(err).NotTo(HaveOccurred())
 
 	return []byte(binaryPath)

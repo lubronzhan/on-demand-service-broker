@@ -1,10 +1,10 @@
 package all_lifecycle_tests
 
 import (
+	"github.com/lubronzhan/on-demand-service-broker/system_tests/test_helpers/bosh_helpers"
+	"github.com/lubronzhan/on-demand-service-broker/system_tests/test_helpers/cf_helpers"
+	"github.com/lubronzhan/on-demand-service-broker/system_tests/test_helpers/service_helpers"
 	. "github.com/onsi/ginkgo"
-	"github.com/pivotal-cf/on-demand-service-broker/system_tests/test_helpers/bosh_helpers"
-	"github.com/pivotal-cf/on-demand-service-broker/system_tests/test_helpers/cf_helpers"
-	"github.com/pivotal-cf/on-demand-service-broker/system_tests/test_helpers/service_helpers"
 )
 
 func BasicLifecycleTest(

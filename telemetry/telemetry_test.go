@@ -3,16 +3,16 @@ package telemetry_test
 import (
 	"fmt"
 
+	"github.com/lubronzhan/on-demand-service-broker/broker"
+	"github.com/lubronzhan/on-demand-service-broker/config"
+	"github.com/lubronzhan/on-demand-service-broker/loggerfactory"
+	"github.com/lubronzhan/on-demand-service-broker/service"
+	"github.com/lubronzhan/on-demand-service-broker/service/fakes"
+	"github.com/lubronzhan/on-demand-service-broker/telemetry"
+	. "github.com/lubronzhan/on-demand-service-broker/telemetry/fakes_telemetry"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"github.com/onsi/gomega/gbytes"
-	"github.com/pivotal-cf/on-demand-service-broker/broker"
-	"github.com/pivotal-cf/on-demand-service-broker/config"
-	"github.com/pivotal-cf/on-demand-service-broker/loggerfactory"
-	"github.com/pivotal-cf/on-demand-service-broker/service"
-	"github.com/pivotal-cf/on-demand-service-broker/service/fakes"
-	"github.com/pivotal-cf/on-demand-service-broker/telemetry"
-	. "github.com/pivotal-cf/on-demand-service-broker/telemetry/fakes_telemetry"
 	"github.com/pkg/errors"
 )
 

@@ -18,16 +18,16 @@ package startupchecker_test
 import (
 	"fmt"
 
-	. "github.com/pivotal-cf/on-demand-service-broker/startupchecker"
+	. "github.com/lubronzhan/on-demand-service-broker/startupchecker"
 
 	"errors"
 
 	"log"
 
+	"github.com/lubronzhan/on-demand-service-broker/cf"
+	"github.com/lubronzhan/on-demand-service-broker/startupchecker/fakes"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"github.com/pivotal-cf/on-demand-service-broker/cf"
-	"github.com/pivotal-cf/on-demand-service-broker/startupchecker/fakes"
 )
 
 var _ = Describe("CFAPIVersionChecker", func() {

@@ -4,7 +4,7 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	"github.com/pivotal-cf/on-demand-service-broker/hasher"
+	"github.com/lubronzhan/on-demand-service-broker/hasher"
 )
 
 var _ = Describe("MapHasher", func() {

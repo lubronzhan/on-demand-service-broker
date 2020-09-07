@@ -20,9 +20,9 @@ import (
 
 	boshdir "github.com/cloudfoundry/bosh-cli/director"
 	boshuaa "github.com/cloudfoundry/bosh-cli/uaa"
-	. "github.com/pivotal-cf/on-demand-service-broker/boshdirector"
-	"github.com/pivotal-cf/on-demand-service-broker/boshdirector/fakes"
-	"github.com/pivotal-cf/on-demand-service-broker/config"
+	. "github.com/lubronzhan/on-demand-service-broker/boshdirector"
+	"github.com/lubronzhan/on-demand-service-broker/boshdirector/fakes"
+	"github.com/lubronzhan/on-demand-service-broker/config"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

@@ -21,9 +21,9 @@ import (
 
 	"gopkg.in/yaml.v2"
 
-	"github.com/pivotal-cf/on-demand-service-broker/config"
-	"github.com/pivotal-cf/on-demand-service-broker/registrar"
-	"github.com/pivotal-cf/on-demand-service-broker/registrar/fakes"
+	"github.com/lubronzhan/on-demand-service-broker/config"
+	"github.com/lubronzhan/on-demand-service-broker/registrar"
+	"github.com/lubronzhan/on-demand-service-broker/registrar/fakes"
 
 	"errors"
 

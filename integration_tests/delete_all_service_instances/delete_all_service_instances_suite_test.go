@@ -27,7 +27,7 @@ var (
 )
 
 var _ = SynchronizedBeforeSuite(func() []byte {
-	binary, err := gexec.Build("github.com/pivotal-cf/on-demand-service-broker/cmd/delete-all-service-instances")
+	binary, err := gexec.Build("github.com/lubronzhan/on-demand-service-broker/cmd/delete-all-service-instances")
 	Expect(err).NotTo(HaveOccurred())
 
 	return []byte(binary)

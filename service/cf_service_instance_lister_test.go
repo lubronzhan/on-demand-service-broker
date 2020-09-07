@@ -5,13 +5,13 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/pivotal-cf/on-demand-service-broker/cf"
+	"github.com/lubronzhan/on-demand-service-broker/cf"
 
+	"github.com/lubronzhan/on-demand-service-broker/config"
+	"github.com/lubronzhan/on-demand-service-broker/service"
+	"github.com/lubronzhan/on-demand-service-broker/service/fakes"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"github.com/pivotal-cf/on-demand-service-broker/config"
-	"github.com/pivotal-cf/on-demand-service-broker/service"
-	"github.com/pivotal-cf/on-demand-service-broker/service/fakes"
 )
 
 var _ = Describe("CFServiceInstanceLister", func() {

@@ -7,7 +7,7 @@ import (
 	"code.cloudfoundry.org/credhub-cli/credhub/credentials"
 	"code.cloudfoundry.org/credhub-cli/credhub/credentials/values"
 	"code.cloudfoundry.org/credhub-cli/credhub/permissions"
-	"github.com/pivotal-cf/on-demand-service-broker/credhub"
+	"github.com/lubronzhan/on-demand-service-broker/credhub"
 )
 
 type FakeCredhubClient struct {

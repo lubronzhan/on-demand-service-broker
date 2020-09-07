@@ -10,13 +10,13 @@ import (
 	"os/exec"
 	"time"
 
-	"github.com/pivotal-cf/on-demand-service-broker/cf"
+	"github.com/lubronzhan/on-demand-service-broker/cf"
 
+	"github.com/lubronzhan/on-demand-service-broker/boshdirector"
+	"github.com/lubronzhan/on-demand-service-broker/broker/fakes"
+	"github.com/lubronzhan/on-demand-service-broker/collaboration_tests/helpers"
+	taskfakes "github.com/lubronzhan/on-demand-service-broker/task/fakes"
 	"github.com/onsi/gomega/ghttp"
-	"github.com/pivotal-cf/on-demand-service-broker/boshdirector"
-	"github.com/pivotal-cf/on-demand-service-broker/broker/fakes"
-	"github.com/pivotal-cf/on-demand-service-broker/collaboration_tests/helpers"
-	taskfakes "github.com/pivotal-cf/on-demand-service-broker/task/fakes"
 	"github.com/pivotal-cf/on-demand-services-sdk/serviceadapter"
 
 	. "github.com/onsi/ginkgo"
@@ -25,7 +25,7 @@ import (
 	"github.com/onsi/gomega/gexec"
 	"gopkg.in/yaml.v2"
 
-	brokerConfig "github.com/pivotal-cf/on-demand-service-broker/config"
+	brokerConfig "github.com/lubronzhan/on-demand-service-broker/config"
 )
 
 var _ = Describe("Recreate all service instances", func() {

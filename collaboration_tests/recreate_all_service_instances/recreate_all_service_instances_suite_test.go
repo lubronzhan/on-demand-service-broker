@@ -6,14 +6,14 @@ import (
 
 	"github.com/onsi/gomega/gbytes"
 
-	"github.com/pivotal-cf/on-demand-service-broker/broker/fakes"
-	credhubfakes "github.com/pivotal-cf/on-demand-service-broker/credhubbroker/fakes"
-	manifestsecretsfakes "github.com/pivotal-cf/on-demand-service-broker/manifestsecrets/fakes"
-	serviceadapterfakes "github.com/pivotal-cf/on-demand-service-broker/serviceadapter/fakes"
-	taskfakes "github.com/pivotal-cf/on-demand-service-broker/task/fakes"
+	"github.com/lubronzhan/on-demand-service-broker/broker/fakes"
+	credhubfakes "github.com/lubronzhan/on-demand-service-broker/credhubbroker/fakes"
+	manifestsecretsfakes "github.com/lubronzhan/on-demand-service-broker/manifestsecrets/fakes"
+	serviceadapterfakes "github.com/lubronzhan/on-demand-service-broker/serviceadapter/fakes"
+	taskfakes "github.com/lubronzhan/on-demand-service-broker/task/fakes"
 
-	"github.com/pivotal-cf/on-demand-service-broker/collaboration_tests/helpers"
-	"github.com/pivotal-cf/on-demand-service-broker/config"
+	"github.com/lubronzhan/on-demand-service-broker/collaboration_tests/helpers"
+	"github.com/lubronzhan/on-demand-service-broker/config"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
@@ -40,7 +40,7 @@ var (
 
 var _ = BeforeSuite(func() {
 	var err error
-	pathToRecreateAll, err = gexec.Build("github.com/pivotal-cf/on-demand-service-broker/cmd/recreate-all-service-instances")
+	pathToRecreateAll, err = gexec.Build("github.com/lubronzhan/on-demand-service-broker/cmd/recreate-all-service-instances")
 	Expect(err).ToNot(HaveOccurred(), "unexpected error when building the binary")
 })
 

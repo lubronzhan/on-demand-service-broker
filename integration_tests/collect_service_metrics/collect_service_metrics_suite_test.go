@@ -22,7 +22,7 @@ func TestCollectServiceMetrics(t *testing.T) {
 var binaryPath string
 
 var _ = SynchronizedBeforeSuite(func() []byte {
-	binaryPath, err := gexec.Build("github.com/pivotal-cf/on-demand-service-broker/cmd/collect-service-metrics")
+	binaryPath, err := gexec.Build("github.com/lubronzhan/on-demand-service-broker/cmd/collect-service-metrics")
 	Expect(err).NotTo(HaveOccurred())
 
 	return []byte(binaryPath)

@@ -10,9 +10,9 @@ import (
 	"time"
 
 	"github.com/craigfurman/herottp"
+	"github.com/lubronzhan/on-demand-service-broker/authorizationheader"
+	"github.com/lubronzhan/on-demand-service-broker/service"
 	"github.com/onsi/ginkgo"
-	"github.com/pivotal-cf/on-demand-service-broker/authorizationheader"
-	"github.com/pivotal-cf/on-demand-service-broker/service"
 )
 
 type SIAPIConfig struct {

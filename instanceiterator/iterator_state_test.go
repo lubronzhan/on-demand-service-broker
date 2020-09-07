@@ -18,11 +18,11 @@ package instanceiterator_test
 import (
 	"fmt"
 
+	"github.com/lubronzhan/on-demand-service-broker/instanceiterator"
+	"github.com/lubronzhan/on-demand-service-broker/service"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/ginkgo/extensions/table"
 	. "github.com/onsi/gomega"
-	"github.com/pivotal-cf/on-demand-service-broker/instanceiterator"
-	"github.com/pivotal-cf/on-demand-service-broker/service"
 )
 
 var _ = Describe("Iterate State", func() {

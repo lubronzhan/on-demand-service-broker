@@ -20,12 +20,12 @@ import (
 	"io"
 	"log"
 
+	"github.com/lubronzhan/on-demand-service-broker/loggerfactory"
+	"github.com/lubronzhan/on-demand-service-broker/purger"
+	"github.com/lubronzhan/on-demand-service-broker/purger/fakes"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"github.com/onsi/gomega/gbytes"
-	"github.com/pivotal-cf/on-demand-service-broker/loggerfactory"
-	"github.com/pivotal-cf/on-demand-service-broker/purger"
-	"github.com/pivotal-cf/on-demand-service-broker/purger/fakes"
 )
 
 var _ = Describe("purger", func() {

@@ -3,7 +3,7 @@ package manifestsecrets
 import (
 	"log"
 
-	"github.com/pivotal-cf/on-demand-service-broker/boshdirector"
+	"github.com/lubronzhan/on-demand-service-broker/boshdirector"
 )
 
 //go:generate go run github.com/maxbrunsfeld/counterfeiter/v6 -o fakes/fake_credhub_operator.go . CredhubOperator

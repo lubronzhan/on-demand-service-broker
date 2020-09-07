@@ -18,7 +18,7 @@ package service_test
 import (
 	"errors"
 
-	"github.com/pivotal-cf/on-demand-service-broker/service"
+	"github.com/lubronzhan/on-demand-service-broker/service"
 
 	"io/ioutil"
 	"net/http"
@@ -33,11 +33,11 @@ import (
 	"log"
 	"os"
 
+	fakes2 "github.com/lubronzhan/on-demand-service-broker/authorizationheader/fakes"
+	"github.com/lubronzhan/on-demand-service-broker/loggerfactory"
+	"github.com/lubronzhan/on-demand-service-broker/service/fakes"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	fakes2 "github.com/pivotal-cf/on-demand-service-broker/authorizationheader/fakes"
-	"github.com/pivotal-cf/on-demand-service-broker/loggerfactory"
-	"github.com/pivotal-cf/on-demand-service-broker/service/fakes"
 )
 
 var _ = Describe("ServiceInstanceLister", func() {

@@ -10,12 +10,12 @@ import (
 	"regexp"
 	"time"
 
-	"github.com/pivotal-cf/on-demand-service-broker/config"
+	"github.com/lubronzhan/on-demand-service-broker/config"
 	"gopkg.in/yaml.v2"
 
+	"github.com/lubronzhan/on-demand-service-broker/integration_tests/helpers"
 	"github.com/onsi/gomega/gbytes"
 	"github.com/onsi/gomega/ghttp"
-	"github.com/pivotal-cf/on-demand-service-broker/integration_tests/helpers"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
@@ -106,7 +106,7 @@ var _ = Describe("RegisterBroker", func() {
 		Expect(createBrokerHandler.RequestsReceived()).To(BeNumerically(">", 0), "no request was made to create broker")
 		createRequest := createBrokerHandler.GetRequestForCall(0)
 		Expect(createRequest.Body).To(MatchJSON(fmt.Sprintf(`{
-				"name": "%s", 
+				"name": "%s",
 				"broker_url": "%s",
 				"auth_username": "%s",
 				"auth_password": "%s"
@@ -130,7 +130,7 @@ var _ = Describe("RegisterBroker", func() {
 
 		updateRequest := updateBrokerHandler.GetRequestForCall(0)
 		Expect(updateRequest.Body).To(MatchJSON(fmt.Sprintf(`{
-				"name": "%s", 
+				"name": "%s",
 				"broker_url": "%s",
 				"auth_username": "%s",
 				"auth_password": "%s"

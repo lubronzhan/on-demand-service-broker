@@ -19,7 +19,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/pivotal-cf/on-demand-service-broker/boshdirector"
+	"github.com/lubronzhan/on-demand-service-broker/boshdirector"
 )
 
 type RecreateRuntimeChecker struct {

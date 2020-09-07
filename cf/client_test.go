@@ -16,13 +16,13 @@ import (
 	"os"
 	"path"
 
+	"github.com/lubronzhan/on-demand-service-broker/cf"
+	"github.com/lubronzhan/on-demand-service-broker/cf/fakes"
+	"github.com/lubronzhan/on-demand-service-broker/mockhttp"
+	"github.com/lubronzhan/on-demand-service-broker/mockhttp/mockcfapi"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"github.com/onsi/gomega/gbytes"
-	"github.com/pivotal-cf/on-demand-service-broker/cf"
-	"github.com/pivotal-cf/on-demand-service-broker/cf/fakes"
-	"github.com/pivotal-cf/on-demand-service-broker/mockhttp"
-	"github.com/pivotal-cf/on-demand-service-broker/mockhttp/mockcfapi"
 )
 
 var _ = Describe("Client", func() {

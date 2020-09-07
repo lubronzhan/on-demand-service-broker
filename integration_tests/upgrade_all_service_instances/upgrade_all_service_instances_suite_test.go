@@ -22,7 +22,7 @@ func TestUpgradeAllServiceInstances(t *testing.T) {
 var binaryPath string
 
 var _ = SynchronizedBeforeSuite(func() []byte {
-	binaryPath, err := gexec.Build("github.com/pivotal-cf/on-demand-service-broker/cmd/upgrade-all-service-instances")
+	binaryPath, err := gexec.Build("github.com/lubronzhan/on-demand-service-broker/cmd/upgrade-all-service-instances")
 	Expect(err).NotTo(HaveOccurred())
 
 	return []byte(binaryPath)

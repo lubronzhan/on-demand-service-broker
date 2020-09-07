@@ -23,9 +23,9 @@ import (
 
 	"code.cloudfoundry.org/credhub-cli/credhub"
 	"code.cloudfoundry.org/credhub-cli/credhub/auth"
+	odbcredhub "github.com/lubronzhan/on-demand-service-broker/credhub"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	odbcredhub "github.com/pivotal-cf/on-demand-service-broker/credhub"
 )
 
 var (

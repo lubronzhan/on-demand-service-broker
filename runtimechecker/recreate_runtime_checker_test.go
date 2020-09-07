@@ -4,10 +4,10 @@ import (
 	"errors"
 	"fmt"
 
+	"github.com/lubronzhan/on-demand-service-broker/boshdirector"
+	"github.com/lubronzhan/on-demand-service-broker/runtimechecker"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"github.com/pivotal-cf/on-demand-service-broker/boshdirector"
-	"github.com/pivotal-cf/on-demand-service-broker/runtimechecker"
 )
 
 var _ = Describe("RecreateRuntimeChecker", func() {

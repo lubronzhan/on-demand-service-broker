@@ -19,7 +19,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/pivotal-cf/on-demand-service-broker/config"
+	"github.com/lubronzhan/on-demand-service-broker/config"
 )
 
 type Deregistrar struct {

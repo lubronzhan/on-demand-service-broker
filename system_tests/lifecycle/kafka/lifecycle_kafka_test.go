@@ -1,9 +1,9 @@
 package lifecycle_test
 
 import (
+	. "github.com/lubronzhan/on-demand-service-broker/system_tests/lifecycle/all_lifecycle_tests"
+	"github.com/lubronzhan/on-demand-service-broker/system_tests/test_helpers/service_helpers"
 	. "github.com/onsi/ginkgo"
-	. "github.com/pivotal-cf/on-demand-service-broker/system_tests/lifecycle/all_lifecycle_tests"
-	"github.com/pivotal-cf/on-demand-service-broker/system_tests/test_helpers/service_helpers"
 )
 
 var _ = Describe("Kafka Lifecycle Tests", func() {

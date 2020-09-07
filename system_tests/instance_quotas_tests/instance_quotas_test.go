@@ -9,12 +9,12 @@ package instance_quotas_tests
 import (
 	"fmt"
 
+	cf "github.com/lubronzhan/on-demand-service-broker/system_tests/test_helpers/cf_helpers"
+	"github.com/lubronzhan/on-demand-service-broker/system_tests/test_helpers/gbytes"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"github.com/onsi/gomega/gexec"
 	"github.com/pborman/uuid"
-	cf "github.com/pivotal-cf/on-demand-service-broker/system_tests/test_helpers/cf_helpers"
-	"github.com/pivotal-cf/on-demand-service-broker/system_tests/test_helpers/gbytes"
 )
 
 var _ = Describe("quotas", func() {

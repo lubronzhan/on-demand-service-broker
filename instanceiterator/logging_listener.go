@@ -12,8 +12,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/pivotal-cf/on-demand-service-broker/config"
-	"github.com/pivotal-cf/on-demand-service-broker/service"
+	"github.com/lubronzhan/on-demand-service-broker/config"
+	"github.com/lubronzhan/on-demand-service-broker/service"
 )
 
 type LoggingListener struct {

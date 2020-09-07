@@ -9,8 +9,8 @@ package noopservicescontroller
 import (
 	"log"
 
-	"github.com/pivotal-cf/on-demand-service-broker/broker"
-	"github.com/pivotal-cf/on-demand-service-broker/cf"
+	"github.com/lubronzhan/on-demand-service-broker/broker"
+	"github.com/lubronzhan/on-demand-service-broker/cf"
 )
 
 type Client struct {

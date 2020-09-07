@@ -16,9 +16,9 @@
 package broker_test
 
 import (
+	"github.com/lubronzhan/on-demand-service-broker/broker"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"github.com/pivotal-cf/on-demand-service-broker/broker"
 )
 
 var _ = Describe("Schema validator", func() {

@@ -3,10 +3,10 @@ package manifestsecrets_test
 import (
 	"fmt"
 
+	"github.com/lubronzhan/on-demand-service-broker/broker"
+	"github.com/lubronzhan/on-demand-service-broker/manifestsecrets"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"github.com/pivotal-cf/on-demand-service-broker/broker"
-	"github.com/pivotal-cf/on-demand-service-broker/manifestsecrets"
 	"github.com/pivotal-cf/on-demand-services-sdk/serviceadapter"
 )
 

@@ -24,9 +24,9 @@ import (
 
 	"io/ioutil"
 
-	"github.com/pivotal-cf/on-demand-service-broker/cf"
-	"github.com/pivotal-cf/on-demand-service-broker/loggerfactory"
-	"github.com/pivotal-cf/on-demand-service-broker/registrar"
+	"github.com/lubronzhan/on-demand-service-broker/cf"
+	"github.com/lubronzhan/on-demand-service-broker/loggerfactory"
+	"github.com/lubronzhan/on-demand-service-broker/registrar"
 )
 
 func main() {

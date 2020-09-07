@@ -19,14 +19,14 @@ import (
 	"testing"
 	"time"
 
+	"github.com/lubronzhan/on-demand-service-broker/config"
+	"github.com/lubronzhan/on-demand-service-broker/integration_tests/on_demand_service_broker/mock"
+	"github.com/lubronzhan/on-demand-service-broker/mockhttp"
+	"github.com/lubronzhan/on-demand-service-broker/mockhttp/mockbosh"
+	"github.com/lubronzhan/on-demand-service-broker/mockhttp/mockcfapi"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"github.com/onsi/gomega/gexec"
-	"github.com/pivotal-cf/on-demand-service-broker/config"
-	"github.com/pivotal-cf/on-demand-service-broker/integration_tests/on_demand_service_broker/mock"
-	"github.com/pivotal-cf/on-demand-service-broker/mockhttp"
-	"github.com/pivotal-cf/on-demand-service-broker/mockhttp/mockbosh"
-	"github.com/pivotal-cf/on-demand-service-broker/mockhttp/mockcfapi"
 	"github.com/pivotal-cf/on-demand-services-sdk/serviceadapter"
 	"gopkg.in/yaml.v2"
 )
@@ -120,10 +120,10 @@ type binPaths struct {
 
 var _ = SynchronizedBeforeSuite(
 	func() []byte {
-		broker, err := gexec.Build("github.com/pivotal-cf/on-demand-service-broker/cmd/on-demand-service-broker")
+		broker, err := gexec.Build("github.com/lubronzhan/on-demand-service-broker/cmd/on-demand-service-broker")
 		Expect(err).NotTo(HaveOccurred())
 
-		adapter, err := gexec.Build("github.com/pivotal-cf/on-demand-service-broker/integration_tests/on_demand_service_broker/mock/adapter")
+		adapter, err := gexec.Build("github.com/lubronzhan/on-demand-service-broker/integration_tests/on_demand_service_broker/mock/adapter")
 		Expect(err).NotTo(HaveOccurred())
 
 		compiledBinaries, err := json.Marshal(binPaths{

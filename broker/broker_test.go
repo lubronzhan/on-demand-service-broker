@@ -9,10 +9,10 @@ package broker_test
 import (
 	"errors"
 
+	"github.com/lubronzhan/on-demand-service-broker/broker"
+	"github.com/lubronzhan/on-demand-service-broker/broker/fakes"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"github.com/pivotal-cf/on-demand-service-broker/broker"
-	"github.com/pivotal-cf/on-demand-service-broker/broker/fakes"
 )
 
 var _ = Describe("Initializing the broker", func() {

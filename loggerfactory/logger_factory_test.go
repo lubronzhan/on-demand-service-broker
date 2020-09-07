@@ -11,10 +11,10 @@ import (
 	"context"
 	"log"
 
+	"github.com/lubronzhan/on-demand-service-broker/brokercontext"
+	"github.com/lubronzhan/on-demand-service-broker/loggerfactory"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"github.com/pivotal-cf/on-demand-service-broker/brokercontext"
-	"github.com/pivotal-cf/on-demand-service-broker/loggerfactory"
 )
 
 var _ = Describe("Logger Factory", func() {

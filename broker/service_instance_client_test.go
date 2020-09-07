@@ -2,10 +2,11 @@ package broker_test
 
 import (
 	"errors"
+	"log"
+
+	brokerfakes "github.com/lubronzhan/on-demand-service-broker/broker/fakes"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	brokerfakes "github.com/pivotal-cf/on-demand-service-broker/broker/fakes"
-	"log"
 )
 
 var _ = Describe("ServiceInstanceClient", func() {

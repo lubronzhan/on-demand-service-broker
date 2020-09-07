@@ -25,11 +25,11 @@ import (
 
 	"time"
 
+	"github.com/lubronzhan/on-demand-service-broker/boshdirector"
+	brokerConfig "github.com/lubronzhan/on-demand-service-broker/config"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"github.com/onsi/gomega/gbytes"
-	"github.com/pivotal-cf/on-demand-service-broker/boshdirector"
-	brokerConfig "github.com/pivotal-cf/on-demand-service-broker/config"
 	"github.com/pkg/errors"
 )
 
