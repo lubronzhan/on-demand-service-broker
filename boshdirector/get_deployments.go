@@ -15,9 +15,18 @@ import (
 
 func (c *Client) GetDeployments(logger *log.Logger) ([]Deployment, error) {
 	logger.Println("getting deployments from bosh")
-	d, err := c.Director(director.NewNoopTaskReporter())
-	if err != nil {
-		return nil, errors.Wrap(err, "Failed to build director")
+	var (
+		d   director.Director
+		err error
+	)
+	if c.boshDirector != nil {
+		logger.Println("Using existing director client")
+		d = *c.boshDirector
+	} else {
+		d, err = c.Director(director.NewNoopTaskReporter())
+		if err != nil {
+			return []Deployment{}, errors.Wrap(err, "Failed to build director")
+		}
 	}
 	rawDeployments, err := d.Deployments()
 	if err != nil {

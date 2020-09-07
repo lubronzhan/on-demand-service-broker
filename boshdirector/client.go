@@ -29,6 +29,7 @@ type Client struct {
 	uaaFactory      UAAFactory
 	directorFactory DirectorFactory
 	dnsRetriever    DNSRetriever
+	boshDirector    *director.Director
 }
 
 //go:generate go run github.com/maxbrunsfeld/counterfeiter/v6 -o fakes/fake_director.go . Director
@@ -115,6 +116,11 @@ func New(url string,
 		BoshInfo:        boshInfo,
 	}
 	client.dnsRetriever = dnsRetrieverFactory(boshHTTPFactory(client))
+	boshDirector, err := client.Director(director.NewNoopTaskReporter())
+	if err != nil {
+		return nil, errors.Wrap(err, "error creating bosh director client")
+	}
+	client.boshDirector = &boshDirector
 	return client, nil
 }
 

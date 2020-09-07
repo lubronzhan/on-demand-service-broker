@@ -15,11 +15,19 @@ import (
 
 func (c *Client) GetDeployment(name string, logger *log.Logger) ([]byte, bool, error) {
 	logger.Printf("getting manifest from bosh for deployment %s", name)
-	d, err := c.Director(director.NewNoopTaskReporter())
-	if err != nil {
-		return nil, false, errors.Wrap(err, "Failed to build director")
+	var (
+		d   director.Director
+		err error
+	)
+	if c.boshDirector != nil {
+		logger.Println("Using existing director client")
+		d = *c.boshDirector
+	} else {
+		d, err = c.Director(director.NewNoopTaskReporter())
+		if err != nil {
+			return nil, false, errors.Wrap(err, "Failed to build director")
+		}
 	}
-
 	deployments, err := d.ListDeployments()
 	if err != nil {
 		return nil, false, errors.Wrap(err, "Cannot get the list of deployments")
